@@ -139,7 +139,7 @@
     UIEdgeInsets inset1 = scrollView.contentInset;
     float y1 = offset1.y + bounds1.size.height - inset1.bottom;
     float h1 = size1.height;
-    float cc=self.venderGrid.frame.size.height+self.venderGrid.frame.size.height/5;
+    float cc=self.venderGrid.frame.size.height+20;
     if (y1 > cc) {
         flagShuaxin = YES;
         NSLog(@"scroll y1:%f  cc:%f",y1,cc);
