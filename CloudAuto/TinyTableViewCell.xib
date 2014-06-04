@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" customClass="TinyTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KvE-Ek-EgV">
+                        <rect key="frame" x="6" y="6" width="88" height="89"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="zl8-Zc-YAA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="苏州和信行汽车服务..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54t-Kg-rpo">
+                        <rect key="frame" x="96" y="5" width="119" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="BRA-aG-eXx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%好评" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yeq-1e-7FN">
+                        <rect key="frame" x="96" y="28" width="85" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="85" id="EAq-nL-lGR"/>
+                            <constraint firstAttribute="height" constant="21" id="nUu-hb-vk2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="维修 整体喷漆" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="176" translatesAutoresizingMaskIntoConstraints="NO" id="L2e-Qw-ySb">
+                        <rect key="frame" x="96" y="45" width="176" height="27"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="（已成交0笔）" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaA-qo-BaT">
+                        <rect key="frame" x="165" y="31" width="87" height="15"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="87" id="rwm-CP-f3f"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.70196080207824707" green="0.70196080207824707" blue="0.70196080207824707" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="奔驰、宝马、奥迪、陆虎" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHH-5V-9fF">
+                        <rect key="frame" x="96" y="68" width="224" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XaA-qo-BaT" firstAttribute="top" secondItem="54t-Kg-rpo" secondAttribute="bottom" constant="5" id="4us-Ea-GC7"/>
+                    <constraint firstItem="54t-Kg-rpo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="5rf-AF-EfV"/>
+                    <constraint firstItem="54t-Kg-rpo" firstAttribute="leading" secondItem="KvE-Ek-EgV" secondAttribute="trailing" constant="2" id="BnW-B3-Oyw"/>
+                    <constraint firstItem="KvE-Ek-EgV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="FNI-A5-zI8"/>
+                    <constraint firstItem="XaA-qo-BaT" firstAttribute="trailing" secondItem="54t-Kg-rpo" secondAttribute="trailing" constant="37" id="MaN-eY-Eeg"/>
+                    <constraint firstItem="Yeq-1e-7FN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="96" id="O6h-8h-fqa"/>
+                    <constraint firstItem="KvE-Ek-EgV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="a4o-TV-W3C"/>
+                    <constraint firstItem="Yeq-1e-7FN" firstAttribute="top" secondItem="54t-Kg-rpo" secondAttribute="bottom" constant="2" id="uZn-PU-l4y"/>
+                    <constraint firstAttribute="bottom" secondItem="KvE-Ek-EgV" secondAttribute="bottom" constant="6" id="yzx-ZW-Zzq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImg" destination="KvE-Ek-EgV" id="RfB-qA-6ai"/>
+                <outlet property="lblBrand" destination="dHH-5V-9fF" id="xbw-ar-pOT"/>
+                <outlet property="lblCaption" destination="L2e-Qw-ySb" id="iaR-VE-DSF"/>
+                <outlet property="lblDealCount" destination="XaA-qo-BaT" id="0KJ-A7-Bss"/>
+                <outlet property="lblGoodPercent" destination="Yeq-1e-7FN" id="06n-TD-gpr"/>
+                <outlet property="lblVender" destination="54t-Kg-rpo" id="yQ2-Tq-fL8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
