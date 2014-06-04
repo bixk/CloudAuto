@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface TinyAutoMallViewController : UIViewController<UIScrollViewDelegate>
+#import "TinyTableViewCell.h"
+#import "TinyVenderAction.h"
+@interface TinyAutoMallViewController : UIViewController<UIScrollViewDelegate,UIScrollViewAccessibilityDelegate,UITableViewDataSource,UITableViewDelegate>
 - (IBAction)btnBack:(id)sender;
+@property NSInteger curPage;
+@property NSMutableArray *venders;
+@property (nonatomic, strong) UIRefreshControl* refreshControl;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (strong, nonatomic) IBOutlet UITableView *venderGrid;
 @property BOOL flagShuaxin;
+
 @end

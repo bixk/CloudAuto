@@ -9,13 +9,15 @@
 #import "TinyVenderAction.h"
 
 @implementation TinyVenderAction
--(NSMutableArray*) getVenderList;
+-(NSMutableArray*) getVenderList:(NSInteger) page
 {
-    NSString *url=@"http://localhost:8080/WebBehind/VenderInfoServlet";
+    NSString *uri= [[NSString alloc] initWithFormat:@"http://localhost:8080/WebBehind/VenderInfoServlet?page=%d" ,page];
+    NSString *url=uri;
+   // NSLog(uri);
     NSURL *mURL= [NSURL URLWithString:url];
     NSURLRequest *request=[[NSURLRequest alloc] initWithURL:mURL];
     NSData *data=[NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-    NSLog(@"request send successfully!");
+  //  NSLog(@"request send successfully!");
  
     NSDictionary *resDic=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
      NSArray* lst=[resDic objectForKey:@"venders"];

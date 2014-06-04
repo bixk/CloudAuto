@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "TinyVenderInfo.h"
 @interface TinyVenderAction : NSObject
--(NSMutableArray*) getVenderList;
+-(NSMutableArray*) getVenderList:(NSInteger) page;
 
 @end

@@ -34,7 +34,7 @@
     [self.venderGrid addSubview:self.refreshControl];
 
     TinyVenderAction *action=[[TinyVenderAction alloc] init];
-    self.venders=action.getVenderList ;
+    self.venders=[action getVenderList :1] ;
     self.venderGrid.delegate=self;
     self.venderGrid.dataSource=self;
     // Do any additional setup after loading the view from its nib.
@@ -58,7 +58,7 @@
     self.refreshControl.attributedTitle = [[NSAttributedString alloc]initWithString:@"下拉刷新"];
     TinyVenderAction *action=[[TinyVenderAction alloc] init];
     [self.venders removeAllObjects];
-    self.venders=action.getVenderList ;
+    self.venders=[action getVenderList :1] ;
     [self.venderGrid reloadData];
 //    
 //    [self.tableView reloadData];
@@ -104,6 +104,18 @@
     
     return cell;
     
+}
+-(UIView*) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    UIView* footerView;
+    if (section ==0) {
+        footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 360, 57.0)];
+        UIButton* btnNextPage = [[UIButton alloc] initWithFrame:footerView.frame];
+        btnNextPage.titleLabel.text = NSLocalizedString(@"next_page", null);
+        [footerView addSubview:btnNextPage];
+        
+    }
+    return footerView;
 }
 - (IBAction)findVenderPressed:(id)sender {
     [self dismissModalViewControllerAnimated:YES];    //home
