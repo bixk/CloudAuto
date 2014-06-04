@@ -14,8 +14,9 @@
 
 @implementation TinyAutoMallViewController
 @synthesize flagShuaxin;
-@synthesize venders;
+@synthesize venders; 
 @synthesize curPage;
+@synthesize pnlLoading;
 @synthesize venderGrid;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +30,7 @@
 - (void)viewDidLoad
 {
     curPage=1;
+   // self.pnlLoading.hidden=YES;
     [super viewDidLoad];
     UIRefreshControl *rc = [[UIRefreshControl alloc] init];
     rc.attributedTitle = [[NSAttributedString alloc]initWithString:@"下拉刷新"];
@@ -37,7 +39,7 @@
     [self.venderGrid addSubview:self.refreshControl];
     
     TinyVenderAction *action=[[TinyVenderAction alloc] init];
-  self.venders=[action getVenderList :curPage] ;
+    self.venders=[action getVenderList :curPage] ;
     self.venderGrid.delegate=self;
     self.venderGrid.dataSource=self;
     self.scrollView.delegate=self;
@@ -130,6 +132,7 @@
 }
 -(void) scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
 {
+    pnlLoading.hidden=YES;
     CGPoint offset1 = scrollView.contentOffset;
     CGRect bounds1 = scrollView.bounds;
     CGSize size1 = scrollView.contentSize;
@@ -159,10 +162,15 @@
     else if (y1 == cc) {
         // DLog(@"%@", flagShuaxin ? @"上拉刷新" : @"下拉刷新");
     }
+    pnlLoading.hidden=YES;
+
+}
+-(void) tableView:(UITableView *)tableView willDisplayFooterView:(UIView *)view forSection:(NSInteger)section{
+    
 }
 -(void) scrollViewDidScroll:(UIScrollView *)scrollView
 {
-   
+    pnlLoading.hidden=NO;
 }
 - (IBAction)btnBack:(id)sender {
     [self dismissModalViewControllerAnimated:YES];

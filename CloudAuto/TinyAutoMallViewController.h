@@ -16,6 +16,7 @@
 @property (nonatomic, strong) UIRefreshControl* refreshControl;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UITableView *venderGrid;
-@property BOOL flagShuaxin;
+@property BOOL flagShuaxin; 
+@property (strong, nonatomic) IBOutlet UIView *pnlLoading;
 
 @end
